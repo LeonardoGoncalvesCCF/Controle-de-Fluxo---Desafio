@@ -19,7 +19,10 @@ public class Contador {
 		System.out.println(" ------------------------------");
 		
 		System.out.println(" Numero 1: " + parametroUm + " Numero 2: " + parametroDois );
-
+		System.out.println(" Numero  " + parametroUm + " - Numero  = " + parametroDois + " " + (parametroUm - parametroDois));
+		
+		
+		
 		//try {
 			//chamando o método contendo a lógica de contagem
 			//contar(parametroUm, parametroDois);
