@@ -19,8 +19,8 @@ public class Contador {
 		int parametroDois = scanner.nextInt();
 		System.out.println(" ------------------------------");
 		
-		System.out.println(" Numero 1: " + parametroUm + " Numero 2: " + parametroDois );
-		System.out.println(" Numero  " + parametroUm + " - Numero  = " + parametroDois + " " + (parametroUm - parametroDois));
+	//	System.out.println(" Numero 1: " + parametroUm + " Numero 2: " + parametroDois );
+	//	System.out.println(" Numero  " + parametroUm + " - Numero  = " + parametroDois + " " + (parametroUm - parametroDois));
 		
 		
 		
@@ -28,8 +28,11 @@ public class Contador {
 			//chamando o método contendo a lógica de contagem
 			contar(parametroUm, parametroDois);
 		
-		}catch (? exception) {
+		}catch (ParametrosInvalidosException exception) {
 			//imprimir a mensagem: O segundo parâmetro deve ser maior que o primeiro
+			
+			System.out.println(exception.getMessage());
+			
 		}
 		
 	}
@@ -47,5 +50,12 @@ public class Contador {
 		
 		int contagem = parametroDois - parametroUm;
 		//realizar o for para imprimir os números com base na variável contagem
+		
+		int decisao = parametroDois - parametroUm;
+		for (int contador = 1; contador <= decisao; contador++ ) {
+			
+			System.out.println("Imprimindo os parametros " + contador); 
+			
+		}
 	} 
 }
